@@ -1,57 +1,105 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
     color: #333;
 }
 
-header {
-    background-color: #0073e6;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.about-me {
+.download-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.profile-photo img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid #0073e6;
     margin-bottom: 20px;
 }
 
-.bio {
-    text-align: center;
+.apk-icon img {
+    border-radius: 50%;
 }
 
-.bio h2 {
-    margin-top: 0;
-    color: #0073e6;
+.apk-details {
+    margin-left: 20px;
 }
 
-.bio p {
-    line-height: 1.6;
+.rating {
     margin: 10px 0;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #0073e6;
-    color: #fff;
-    position: fixed;
+.stars i {
+    color: #f39c12;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.apk-info-table {
     width: 100%;
-    bottom: 0;
+    border-collapse: collapse;
+}
+
+.apk-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-col {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.feature-col:last-child {
+    margin-right: 0;
+}
+
+.icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.download-button:hover {
+    background-color: #218838;
 }
